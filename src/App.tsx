@@ -18,11 +18,11 @@ export default function App() {
 
   useEffect(() => {
     Promise.all([
-      fetch("/data/recipes.json").then((r) => {
+      fetch("data/recipes.json").then((r) => {
         if (!r.ok) throw new Error("No se pudieron cargar las recetas");
         return r.json() as Promise<RecipesFile>;
       }),
-      fetch("/data/prices.json").then((r) => {
+      fetch("data/prices.json").then((r) => {
         if (!r.ok) throw new Error("No se pudieron cargar los precios");
         return r.json() as Promise<PricesData>;
       }),
