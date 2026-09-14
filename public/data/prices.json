@@ -1,0 +1,18 @@
+{
+  "currency": "COP",
+  "history": [
+    {
+      "date": "2026-09-13",
+      "items": {
+        "Leche entera": { "price": 4200, "unit": "L" },
+        "Leche condensada": { "price": 15400, "unit": "kg" },
+        "Crema de leche": { "price": 28000, "unit": "kg" },
+        "Leche Klim": { "price": 55000, "unit": "kg" },
+        "Maizena": { "price": 12500, "unit": "kg" },
+        "Esencia de vainilla": { "price": 80000, "unit": "L" },
+        "Sal": { "price": 1000, "unit": "kg" },
+        "Galletas Ducales": { "price": 400, "unit": "unidad" }
+      }
+    }
+  ]
+}

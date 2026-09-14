@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 12px);
+
+  --shadow-card: 0 1px 2px hsl(0 0% 0% / 0.04), 0 10px 28px -14px hsl(0 0% 0% / 0.14);
+}
+
+:root {
+  --radius: 0.9rem;
+}
+
+/* ---- Tema pastel rosa ---- */
+:root[data-theme="pink"] {
+  --background: hsl(335 55% 97%);
+  --foreground: hsl(335 35% 16%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(335 30% 16%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(335 30% 16%);
+  --primary: hsl(340 82% 76%);
+  --primary-foreground: hsl(340 48% 17%);
+  --secondary: hsl(340 55% 92%);
+  --secondary-foreground: hsl(336 40% 22%);
+  --muted: hsl(340 40% 93.5%);
+  --muted-foreground: hsl(335 15% 42%);
+  --accent: hsl(340 60% 89%);
+  --accent-foreground: hsl(336 45% 18%);
+  --destructive: hsl(355 70% 52%);
+  --border: hsl(340 35% 87%);
+  --input: hsl(340 30% 85%);
+  --ring: hsl(340 88% 66%);
+  --chart-1: hsl(340 80% 66%);
+  --chart-2: hsl(12 80% 66%);
+  --chart-3: hsl(45 85% 60%);
+  --chart-4: hsl(200 75% 64%);
+  --chart-5: hsl(280 70% 68%);
+}
+
+/* ---- Tema pastel azul ---- */
+:root[data-theme="blue"] {
+  --background: hsl(205 50% 96.5%);
+  --foreground: hsl(215 40% 15%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(215 35% 15%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(215 35% 15%);
+  --primary: hsl(207 85% 73%);
+  --primary-foreground: hsl(210 65% 13%);
+  --secondary: hsl(205 55% 90%);
+  --secondary-foreground: hsl(212 45% 20%);
+  --muted: hsl(205 40% 92.5%);
+  --muted-foreground: hsl(212 15% 42%);
+  --accent: hsl(205 55% 88%);
+  --accent-foreground: hsl(212 50% 18%);
+  --destructive: hsl(355 70% 52%);
+  --border: hsl(205 35% 85%);
+  --input: hsl(205 30% 83%);
+  --ring: hsl(207 90% 62%);
+  --chart-1: hsl(207 80% 60%);
+  --chart-2: hsl(12 80% 66%);
+  --chart-3: hsl(45 85% 60%);
+  --chart-4: hsl(340 80% 66%);
+  --chart-5: hsl(280 70% 68%);
+}
+
+/* ---- Tema pastel amarillo ---- */
+:root[data-theme="yellow"] {
+  --background: hsl(45 70% 96%);
+  --foreground: hsl(40 40% 13%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(40 35% 13%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(40 35% 13%);
+  --primary: hsl(45 92% 67%);
+  --primary-foreground: hsl(42 55% 11%);
+  --secondary: hsl(45 66% 90%);
+  --secondary-foreground: hsl(41 45% 18%);
+  --muted: hsl(45 45% 92%);
+  --muted-foreground: hsl(41 15% 38%);
+  --accent: hsl(45 62% 88%);
+  --accent-foreground: hsl(41 50% 16%);
+  --destructive: hsl(20 75% 46%);
+  --border: hsl(43 45% 84%);
+  --input: hsl(43 40% 82%);
+  --ring: hsl(43 95% 56%);
+  --chart-1: hsl(43 90% 55%);
+  --chart-2: hsl(12 80% 66%);
+  --chart-3: hsl(210 80% 62%);
+  --chart-4: hsl(340 80% 66%);
+  --chart-5: hsl(280 70% 68%);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+    background-image:
+      radial-gradient(circle at 15% -10%, color-mix(in hsl, var(--primary) 18%, transparent) 0, transparent 45%),
+      radial-gradient(circle at 100% 0%, color-mix(in hsl, var(--secondary) 55%, transparent) 0, transparent 40%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
