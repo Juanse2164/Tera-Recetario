@@ -94,6 +94,110 @@
         "Es un postre sin azúcar añadida: la dulzura viene de la leche condensada y las galletas.",
         "Opcional: espolvorea un poco más de Klim encima al servir."
       ]
+    },
+    {
+      "id": "pave-de-milo",
+      "title": "Pavé de Milo",
+      "category": "postres",
+      "description": "Un postre cremoso con el sabor clásico de Milo: capas de galleta Ducales humedecidas en leche, entre una crema suave de leche condensada, crema de leche y Milo. Se refrigera y se sirve frío.",
+      "dateAdded": "2026-09-13",
+      "yieldAmount": 1,
+      "yieldUnit": "pavé de 8 oz",
+      "ingredientGroups": [
+        {
+          "title": "Para la crema",
+          "ingredients": [
+            {
+              "name": "Leche entera",
+              "amount": 85,
+              "unit": "ml",
+              "note": "Mide bien; de ahí se separan 20–25 ml para disolver la Maizena"
+            },
+            { "name": "Leche condensada", "amount": 34, "unit": "g" },
+            { "name": "Crema de leche", "amount": 34, "unit": "g" },
+            {
+              "name": "Milo",
+              "amount": 8.75,
+              "unit": "g",
+              "displayAmount": "8,5–9 g"
+            },
+            { "name": "Maizena", "amount": 3.4, "unit": "g" },
+            {
+              "name": "Esencia de vainilla",
+              "amount": 0.8,
+              "unit": "ml",
+              "displayAmount": "⅛ cucharadita + pizquita",
+              "note": "Equivale a ⅛ de cucharadita más una pizquita"
+            },
+            { "name": "Sal", "amount": 0.25, "unit": "g", "displayAmount": "1 pizquita", "note": "Una pizquita, al final" }
+          ]
+        },
+        {
+          "title": "Para las capas",
+          "ingredients": [
+            {
+              "name": "Galletas Ducales",
+              "amount": 5.5,
+              "unit": "unidad",
+              "displayAmount": "5–6",
+              "note": "Se usa el promedio para el cálculo de costo"
+            },
+            {
+              "name": "Milo",
+              "amount": 10,
+              "unit": "g",
+              "displayAmount": "9–11 g",
+              "note": "Para espolvorear entre capas"
+            }
+          ]
+        },
+        {
+          "title": "Para humedecer las Ducales",
+          "note": "Sin azúcar: solo leche con un poco de Milo.",
+          "ingredients": [
+            { "name": "Leche entera", "amount": 25.5, "unit": "ml", "displayAmount": "23–28 ml" },
+            {
+              "name": "Milo",
+              "amount": 2.5,
+              "unit": "g",
+              "displayAmount": "½–⅔ cucharadita (2–3 g)"
+            }
+          ]
+        }
+      ],
+      "assembly": [
+        "Crema",
+        "Ducales",
+        "Milo",
+        "Crema",
+        "Ducales",
+        "Ducales",
+        "Milo",
+        "Crema",
+        "Ducales",
+        "Milo",
+        "Crema"
+      ],
+      "assemblyNote": "Sin topping final. El orden se lee de arriba hacia abajo; para montar, empieza por la última capa (la base) y sube.",
+      "steps": [
+        "Separa 20–25 ml de los 85 ml de leche entera y disuelve ahí los 3,4 g de Maizena. Reserva.",
+        "En una olla coloca el resto de la leche, la leche condensada, la crema de leche y el Milo.",
+        "Calienta a fuego medio-bajo, revolviendo constantemente.",
+        "Cuando esté caliente y comience a soltar vapor, agrega la Maizena disuelta.",
+        "Revuelve hasta que espese ligeramente y aparezcan pequeñas burbujas. Cocina 1–2 minutos más.",
+        "Retira del fuego y añade la esencia de vainilla y la pizca de sal.",
+        "Deja enfriar un poco. La crema debe quedar lisa, suave y cremosa, porque espesará más al refrigerarse.",
+        "Humedece las galletas Ducales rápidamente en la mezcla de leche con Milo, sin dejarlas remojando.",
+        "Monta las capas siguiendo el orden de la sección de montaje.",
+        "Refrigera mínimo 6 horas, idealmente toda la noche."
+      ],
+      "notes": [
+        "Refrigera mínimo 6 horas; idealmente toda la noche para que tome cuerpo.",
+        "La crema se ve líquida al principio, pero espesa al enfriar: no la cocines de más.",
+        "No dejes las galletas remojando para que conserven algo de textura.",
+        "Es un postre sin azúcar añadida: la dulzura viene de la leche condensada y las galletas.",
+        "Opcional: espolvorea un poco más de Milo encima al servir."
+      ]
     }
   ]
 }

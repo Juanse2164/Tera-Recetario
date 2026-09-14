@@ -1,5 +1,5 @@
-import type { Recipe } from "./types";
-import { ingredientLabel } from "./utils";
+import type { Recipe } from "./types.ts";
+import { ingredientLabel } from "./utils.ts";
 
 export interface PriceItem {
   price: number;
